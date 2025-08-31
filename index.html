@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Minimal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Notas</h2>
+                <button id="new-note" title="Nova nota">+</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="search-notes" placeholder="Buscar notas...">
+            </div>
+            <div class="notes-list" id="notes-list">
+                <!-- Lista de notas será gerada aqui -->
+            </div>
+        </div>
+        
+        <div class="editor-container">
+            <input type="text" id="note-title" placeholder="Título da nota..." class="note-title">
+            <textarea id="note-content" placeholder="Escreva sua nota aqui... Use [[ para criar links"></textarea>
+            <div id="preview" class="preview"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
