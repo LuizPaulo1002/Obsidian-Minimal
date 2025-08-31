@@ -1,9 +1,15 @@
 # Obsidian-Minimal
 Um aplicativo de notas minimalista inspirado no Obsidian, construído com HTML, CSS e JavaScript puro. Perfeito para quem quer uma alternativa leve e simples para gerenciar conhecimento pessoal.
 
-Funcionalidades: Interface minimalista - Design limpo e focado Markdown básico - Suporte para formatação (negrito, itálico, títulos) Busca de notas - Pesquisa por título ou conteúdo Armazenamento local - Todas as notas ficam salvas no seu navegador Auto-salvamento - Salvamento automático a cada 30 segundos
+Funcionalidades: Interface minimalista 
+Design limpo e focado Markdown básico 
+Suporte para formatação (negrito, itálico, títulos) Busca de notas 
+Pesquisa por título ou conteúdo Armazenamento local 
+Todas as notas ficam salvas no seu navegador Auto-salvamento 
+Salvamento automático a cada 30 segundos
 
-Como Usar? Baixe ou clone o repositório: git clone (https://github.com/LuizPaulo1002/Obsidian-Minimal.git)
+Como Usar? 
+Baixe ou clone o repositório: git clone (https://github.com/LuizPaulo1002/Obsidian-Minimal.git)
 
 Teclas de Atalho:
 Ctrl + N: Criar nova nota 
