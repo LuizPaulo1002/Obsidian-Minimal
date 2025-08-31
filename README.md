@@ -1,61 +1,82 @@
 # Obsidian-Minimal
-Um aplicativo de notas minimalista inspirado no Obsidian, construído com HTML, CSS e JavaScript puro. Perfeito para quem quer uma alternativa leve e simples para gerenciar conhecimento pessoal.
 
-Funcionalidades: Interface minimalista 
-Design limpo e focado Markdown básico 
-Suporte para formatação (negrito, itálico, títulos) Busca de notas 
-Pesquisa por título ou conteúdo Armazenamento local 
-Todas as notas ficam salvas no seu navegador Auto-salvamento 
-Salvamento automático a cada 30 segundos
+Um aplicativo de notas minimalista inspirado no Obsidian, construído com HTML, CSS e JavaScript puro. Ideal para quem busca uma solução leve e simples para gerenciar conhecimento pessoal.
 
-Como Usar? 
-Baixe ou clone o repositório: git clone (https://github.com/LuizPaulo1002/Obsidian-Minimal.git)
+## Funcionalidades
 
-Teclas de Atalho:
-Ctrl + N: Criar nova nota 
-Ctrl + S: Salvar nota (manual)
-Clique direito: Deletar nota
+- **Interface minimalista**: Design limpo e focado para uma experiência sem distrações.
+- **Suporte a Markdown básico**: Formatação para negrito, itálico e títulos.
+- **Busca de notas**: Pesquise notas por título ou conteúdo.
+- **Armazenamento local**: Notas salvas diretamente no navegador via localStorage.
+- **Auto-salvamento**: Salvamento automático a cada 30 segundos.
 
-Criando Links Entre Notas
-Use a sintaxe [[Nome da Nota]] para criar links internos. Se a nota não existir, ela será criada automaticamente ao clicar no link.
+## Como Usar
 
-Formatação Markdown
-Negrito: **texto**
-Itálico: *texto*
-Títulos: # Título, ## Subtítulo, ### Sub-subtítulo
+1. Baixe ou clone o repositório:
+   ```
+   git clone https://github.com/LuizPaulo1002/Obsidian-Minimal.git
+   ```
+2. Abra o arquivo `index.html` em um navegador.
+3. Comece a criar e gerenciar suas notas.
 
-Busca
-Use o campo de busca na barra lateral para encontrar notas por título ou conteúdo.
+### Teclas de Atalho
 
-Armazenamento
-Todas as notas são armazenadas no localStorage do seu navegador:
+- `Ctrl + N`: Criar nova nota
+- `Ctrl + S`: Salvar nota manualmente
+- Clique direito: Deletar nota
 
-Localização: Navegador > Configurações > Cookies e dados do site
-Limite: Aproximadamente 5-10MB dependendo do navegador
-Backup: Exporte manualmente copiando o conteúdo das notas
+### Criando Links Entre Notas
 
-Próximas Funcionalidades
-Exportação/importação (JSON, Markdown)
-Temas múltiplos (claro/escuro)
-Sistema de tags
-Favoritos
-Gráfico de conexões
-Sincronização em nuvem
+Use a sintaxe `[[Nome da Nota]]` para criar links internos. Se a nota referenciada não existir, ela será criada automaticamente ao clicar no link.
 
+### Formatação Markdown
 
+- **Negrito**: `**texto**`
+- **Itálico**: `*texto*`
+- **Títulos**: `# Título`, `## Subtítulo`, `### Sub-subtítulo`
 
-Contribuindo
-Faça um fork do projeto
-Crie uma branch para sua feature (git checkout -b feature/MinhaFeature)
-Commit suas mudanças (git commit -m 'Adiciona MinhaFeature')
-Push para a branch (git push origin feature/MinhaFeature)
-Abra um Pull Request
+### Busca
 
-Suporte
-Issues: Use a seção de Issues do GitHub
-Sugestões: Abra uma issue com a tag "enhancement"
-Bugs: Reporte com detalhes e passos para reproduzir
+Utilize o campo de busca na barra lateral para localizar notas por título ou conteúdo.
 
+### Armazenamento
 
-Agradecimentos
-Inspirado no incrível Obsidian.md - uma ferramenta poderosa para organização de conhecimento.
+- **Localização**: As notas são salvas no `localStorage` do navegador (Navegador > Configurações > Cookies e dados do site).
+- **Limite**: Aproximadamente 5-10 MB, dependendo do navegador.
+- **Backup**: Exporte manualmente copiando o conteúdo das notas.
+
+## Próximas Funcionalidades
+
+- Exportação e importação de notas (JSON, Markdown)
+- Suporte a temas (claro/escuro)
+- Sistema de tags
+- Marcação de notas como favoritas
+- Gráfico de conexões entre notas
+- Sincronização em nuvem
+
+## Contribuindo
+
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature:
+   ```
+   git checkout -b feature/MinhaFeature
+   ```
+3. Commit suas mudanças:
+   ```
+   git commit -m 'Adiciona MinhaFeature'
+   ```
+4. Faça push para a branch:
+   ```
+   git push origin feature/MinhaFeature
+   ```
+5. Abra um Pull Request no GitHub.
+
+## Suporte
+
+- **Issues**: Use a seção de Issues do GitHub para reportar problemas.
+- **Sugestões**: Crie uma issue com a tag `enhancement`.
+- **Bugs**: Forneça detalhes e passos para reproduzir o problema.
+
+## Agradecimentos
+
+Inspirado no [Obsidian](https://obsidian.md), uma ferramenta poderosa para organização de conhecimento.
