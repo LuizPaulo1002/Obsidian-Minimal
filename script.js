@@ -33,6 +33,11 @@ class ObsidianMinimal {
                 e.preventDefault();
                 this.createNote();
             }
+            // Nova tecla de atalho: Ctrl + X para deletar sem confirmação
+            if (e.ctrlKey && e.key === 'x') {
+                e.preventDefault();
+                this.deleteNoteWithShortcut();
+            }
         });
     }
 
@@ -99,6 +104,17 @@ class ObsidianMinimal {
         this.renderNotesList();
     }
 
+    deleteNoteWithShortcut() {
+        if (!this.currentNoteId) {
+            // Opcional: mostrar mensagem de erro
+            console.log('Nenhuma nota selecionada para deletar.');
+            return;
+        }
+        
+        // Deleta diretamente sem confirmação
+        this.deleteNote(this.currentNoteId);
+    }
+
     renderNotesList() {
         const searchTerm = this.searchInput.value.toLowerCase();
         const filteredNotes = this.notes.filter(note => 
@@ -118,12 +134,6 @@ class ObsidianMinimal {
             `;
             
             noteElement.addEventListener('click', () => this.selectNote(note.id));
-            noteElement.addEventListener('contextmenu', (e) => {
-                e.preventDefault();
-                if (confirm('Deseja deletar esta nota?')) {
-                    this.deleteNote(note.id);
-                }
-            });
 
             this.notesList.appendChild(noteElement);
         });

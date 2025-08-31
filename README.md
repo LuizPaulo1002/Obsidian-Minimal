@@ -23,7 +23,7 @@ Um aplicativo de notas minimalista inspirado no Obsidian, construído com HTML, 
 
 - `Ctrl + N`: Criar nova nota
 - `Ctrl + S`: Salvar nota manualmente
-- Clique direito: Deletar nota
+- `Ctrl + X`: Deletar nota
 
 ### Criando Links Entre Notas
 
