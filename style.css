@@ -67,6 +67,25 @@ body {
     color: white;
 }
 
+.trash-toggle {
+    padding: 0 15px 15px 15px;
+}
+
+#toggle-trash {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #3a3a3a;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+}
+
+#toggle-trash:hover {
+    background-color: #4a4a4a;
+}
+
 .notes-list {
     flex: 1;
     overflow-y: auto;
@@ -77,6 +96,7 @@ body {
     border-bottom: 1px solid #444;
     cursor: pointer;
     transition: background-color 0.2s;
+    position: relative;
 }
 
 .note-item:hover {
@@ -85,6 +105,15 @@ body {
 
 .note-item.active {
     background-color: #3a3a3a;
+}
+
+.note-item.trash-item {
+    opacity: 0.7;
+    background-color: #3a2a2a;
+}
+
+.note-item.trash-item:hover {
+    background-color: #4a3a3a;
 }
 
 .note-item h3 {
@@ -108,6 +137,36 @@ body {
     font-size: 0.7em;
     color: #888;
     margin-top: 4px;
+}
+
+.note-item .trash-actions {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.note-item:hover .trash-actions {
+    display: block;
+}
+
+.trash-actions button {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 2px 4px;
+}
+
+.trash-actions button.restore {
+    color: #4ecdc4;
+    margin-right: 5px;
+}
+
+.trash-actions button.delete {
+    color: #ff6b6b;
 }
 
 /* Editor */
@@ -181,4 +240,22 @@ body {
 
 .preview .internal-link:hover {
     background-color: rgba(0, 102, 204, 0.2);
+}
+
+.empty-trash {
+    padding: 20px;
+    text-align: center;
+}
+
+.empty-trash button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.empty-trash button:hover {
+    background-color: #ff5252;
 }
